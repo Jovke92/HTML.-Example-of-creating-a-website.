@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulari</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>Formular</h1>
+	<form>
+	<label for="ImeiPrezime">Unesite Ime i prezime:</label>
+	<input type="text" name="ImeiPrezime" id="ImeiPrezime" placeholder="Unesite Ime i prezime" required minlenght = "4" maxlength="30"> <br>
+
+	<label for="JMBG">Unesite JMBG:</label>
+	<input type="text" name="JBMG" id="JBMG" placeholder="Unesite JBMG" required minlength="13" maxlength="13"><br>
+
+	<p>Odabir radnog statusa:</p>
+	<label for="Student">Student</label>
+	<input type="radio" name="Status" id="Student">
+	<label for="Penzioner">Penzioner</label>
+	<input type="radio" name="Status" id="Penzioner">
+	<label for="Zaposleni">Zaposleni</label>
+	<input type="radio" name="Status" id="Zaposleni">
+	<label for="Nezaposleni">Nezaposleni</label>
+	<input type="radio" name="Status" id="Nezaposleni"> <br>
+
+	<p>Zavrseni kursevi:</p>
+	<label for="VebProgramiranje">Veb programiranje</label>
+	<input type="checkbox" name="kursevi[]" id="VebProgramiranje">
+	<label for="ITEnglish">IT English</label>
+	<input type="checkbox" name="kursevi[]" id="ITEnglish">
+	<label for="GrafickiDizajin">Graficki dizajin</label>
+	<input type="checkbox" name="kursevi[]" id="GrafickiDizajin">
+	<label for="Java">Java programiranje</label>
+	<input type="checkbox" name="kursevi[]" id="Java"> <br>
+
+	<input type="submit" value = "Sacuvaj">
+</form>
+</body>
+</html>
